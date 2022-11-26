@@ -93,7 +93,7 @@ const Home = () => {
     // const newEvent = { title: title, start: start, end: finish };
     if (data.start > data.end) {
       alert("Bitiş tarihi başlangıç tarihinden erken olamaz");
-    } else if (data.start === data.end || data.start <= data.end) {
+    } else if (data.start <= data.end) {
       const event = {
         title: data.title,
         start: data.start,
@@ -120,7 +120,7 @@ const Home = () => {
           spacing={3}
         >
           <Grid item xs={12}>
-            <h1>Calendar</h1>
+            <h1>Takvim</h1>
             <h2>Yeni Etkinlikleri Ekle</h2>
           </Grid>
           <Grid item xs={3}>
